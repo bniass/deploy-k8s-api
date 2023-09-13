@@ -3,15 +3,15 @@ package com.ecole221.depoyk8sapi.model;
 public class Personne {
     private long id;
     private long age;
-    private String name;
+    private String nom;
 
     public Personne() {
     }
 
-    public Personne(long id, long age, String name) {
+    public Personne(long id, long age, String nom) {
         this.id = id;
         this.age = age;
-        this.name = name;
+        this.nom = nom;
     }
 
     public long getId() {
@@ -30,11 +30,11 @@ public class Personne {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
+    public String getNom() {
+        return nom;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 }
