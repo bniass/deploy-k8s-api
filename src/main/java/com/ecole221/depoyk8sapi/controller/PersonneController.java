@@ -22,7 +22,7 @@ public class PersonneController {
 
     @GetMapping("/personnes")
     public @ResponseBody ResponseEntity findAll(){
-        List<Personne> personnes = personneService.allPersons();
-        return new ResponseEntity(personnes, HttpStatus.OK);
+        List<Personne> persons = personneService.allPersons();
+        return new ResponseEntity(persons, HttpStatus.OK);
     }
 }
